@@ -5,6 +5,11 @@
   margin: 0 auto;
   padding: 2rem;
   font-weight: normal;
+
+  
+  font-family: "Libre Franklin", sans-serif;
+  font-style: normal;
+
 }
 
 @media (hover: hover) {
