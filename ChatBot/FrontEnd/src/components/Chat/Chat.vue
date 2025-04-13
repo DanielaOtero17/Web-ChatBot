@@ -84,6 +84,8 @@ const getResponse = (nMsg) => {
 
     messagesList.value.push(newMessage);
 
+    console.log("ESta llegando el mensaje")
+
   })
 }
 

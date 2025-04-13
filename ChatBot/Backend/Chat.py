@@ -47,6 +47,7 @@ def get_bot_reply(user_msg):
 def find_reply(categoria, respuestas_JSON):
 
     for dupla in respuestas_JSON:
+        
         if dupla.get("Categoria") == categoria:
             return(dupla.get("Mensaje"))
 
@@ -56,6 +57,8 @@ def noResponse(respuestas_JSON):
     for dupla in respuestas_JSON:
         if dupla.get("Categoria") == "noEntiendo":
             message = dupla.get("Mensaje")
+
+    print(message)
     
     return message
 

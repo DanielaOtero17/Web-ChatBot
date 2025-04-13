@@ -6,7 +6,6 @@ app = Flask(__name__)
 
 CORS(app)
 
-
 @app.route('/')
 def home():
     return "Welcome"
@@ -14,7 +13,9 @@ def home():
 
 @app.route('/respuestas/<pregunta>')
 def get_response(pregunta):
+
     message = get_bot_reply(pregunta)
+    
     response = {'mensaje': message }
 
     return jsonify(response),200
