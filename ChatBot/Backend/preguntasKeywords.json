@@ -1,0 +1,98 @@
+[
+    {
+        "Categoria": "Asesor",
+        "Keywords": [
+            "asesor",
+            "ayuda",
+            "agente"
+        ]
+    },
+    {
+        "Categoria": "Factura",
+        "Keywords": [
+            "factura",
+            "ver mi factura",
+            "descargar factura",
+            "mi factura",
+            "facturaci\u00f3n"
+        ]
+    },
+    {
+        "Categoria": "Instalacion",
+        "Keywords": [
+            "instalar",
+            "instalaci\u00f3n",
+            "instalacion",
+            "agendar instalaci\u00f3n",
+            "costo de instalaci\u00f3n",
+            "costo para instalar",
+            "adquirir"
+        ]
+    },
+    {
+        "Categoria": "MetodosPago",
+        "Keywords": [
+            "metodos de pago",
+            "pago",
+            "pagar",
+            "realizar pago",
+            "transferencia",
+            "bancario",
+            "bancaria",
+            "pse"
+        ]
+    },
+    {
+        "Categoria": "Precio",
+        "Keywords": [
+            "precio",
+            "precio de productos",
+            "precio de servicios"
+        ]
+    },
+    {
+        "Categoria": "Servicios",
+        "Keywords": [
+            "servicios",
+            "productos"
+        ]
+    },
+    {
+        "Categoria": "Soporte",
+        "Keywords": [
+            "falla",
+            "soporte t\u00e9cnico",
+            "tecnico",
+            "soporte tecnico",
+            "error"
+        ]
+    },
+    {
+        "Categoria": "contacto",
+        "Keywords": [
+            "contacto",
+            "telefono",
+            "n\u00famero de contacto"
+        ]
+    },
+    {
+        "Categoria": "horarioAtencion",
+        "Keywords": [
+            "horario",
+            "hora",
+            "apertura",
+            "atenci\u00f3n",
+            "atencion"
+        ]
+    },
+    {
+        "Categoria": "tipoConexion",
+        "Keywords": [
+            "conexion",
+            "tipo de conexion",
+            "cable",
+            "fibra optica",
+            "fibra"
+        ]
+    }
+]

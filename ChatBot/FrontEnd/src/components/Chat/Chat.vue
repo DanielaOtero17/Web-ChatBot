@@ -1,11 +1,16 @@
 <script setup>
 
-import {ref} from 'vue'
+import { ref} from 'vue'
 import LeftBubble from '../Bubble/LeftBubble.vue'
+import { respuestaStore } from '@/preguntasStore'
+import axios  from 'axios'
+
+const theRespuestaStore = respuestaStore();
+
 
 const messageText = {
-    mensaje: "Hola soy DanielaBot. Estoy aquí para ayudarte",
-    esRespuesta: true,    
+    mensaje: "Hola soy DanielaBot. Estoy aquí para ayudarte. ¿Qué deseas preguntarme hoy?",
+    esRespuesta: true,
 }
 
 const messagesList= ref([])
@@ -14,16 +19,11 @@ const textoModel = ref('');
 
 messagesList.value.push(messageText)
 
-const message2Text = {
-    mensaje: "Este es otro mensaje de prueba",
-    esRespuesta: false,    
-}
-
 
 const onClick = () =>{
-    
-    var msg = document.getElementById("textoPregunta").value;
 
+    var msg = textoModel.value;
+    theRespuestaStore.guardarPregunta(msg)
     textoModel.value = "";
 
     const nuevoMensaje ={
@@ -33,7 +33,59 @@ const onClick = () =>{
 
     messagesList.value.push(nuevoMensaje)
 
+    getResponse(msg);
+
   };
+
+/*  const guardarMessageBD = (theMessage) => {
+    db.collection("mensajes").add({
+    message: theMessage,
+  }).then((docRef) => {
+    console.log("Document written with ID: ", docRef.id);
+  })
+  .catch((error) => {
+    console.error("Error adding document: ", error);
+  });
+
+  }
+
+
+
+const guardarRespuestaBD = (theMessage) => {
+  db.collection("Respuestas").add({
+    message: theMessage,
+  }).then((docRef) => {
+    console.log("Document written with ID: ", docRef.id);
+  })
+  .catch((error) => {
+    console.error("Error adding document: ", error);
+  });
+}*/
+
+/*const createMessage = (nMsg) => {
+
+  axios.post('http://127.0.0.1:3000/respuestas/', {pregunta:nMsg, preguntas: answers, respuestas: answers }).then(response =>{
+    console.log("Pregunta creada con exito: ", response.data);
+
+
+   }) .catch(error => {
+    console.error("Error al crear el recurso: ", error);
+});*/
+
+const getResponse = (nMsg) => {
+
+
+  axios.get('http://127.0.0.1:3000/respuestas/'+ nMsg ).then(response => {
+
+    var newMessage = {
+    mensaje: response.data.mensaje,
+    esRespuesta: true,
+    }
+
+    messagesList.value.push(newMessage);
+
+  })
+}
 
 </script>
 
@@ -58,20 +110,20 @@ const onClick = () =>{
 
 
             </v-virtual-scroll>
-        
+
 
         <v-container class="chatEnd">
-            <v-text-field id="textoPregunta" placeholder="Haz una pregunta ..." variant="regular" 
-            class="entryMessage" 
+            <v-text-field id="textoPregunta" placeholder="Haz una pregunta ..." variant="regular"
+            class="entryMessage"
             name="textoPregunta"
             v-model:model-value="textoModel"
             >
-                
+
             </v-text-field>
             <v-btn elevation="0" color="#FAFAFA" height="60" append-icon="mdi-send" @Click="onClick"></v-btn>
 
         </v-container>
-        
+
     </v-container>
 
 </template>
@@ -124,7 +176,7 @@ const onClick = () =>{
     border-bottom-left-radius: 20px;
 
     height: 60px;
-    
+
 }
 
 .v-btn{

@@ -1,0 +1,46 @@
+[
+    {
+        "Categoria": "Asesor",
+        "Mensaje": "Un asesor se pondr\u00e1 en contacto contigo en un momento. Por favor, no salgas de la p\u00e1gina"
+    },
+    {
+        "Categoria": "Factura",
+        "Mensaje": "Tu factura se emite los 5 de cada mes. Puedes verla en tu correo electr\u00f3nico o descargarla desde nuestro sitio web www.tuChatBot/descargaTuFactura/123"
+    },
+    {
+        "Categoria": "Instalacion",
+        "Mensaje": "Para realizar una instalaci\u00f3n debes agendarla con 3 d\u00edas de anticipaci\u00f3n. Debes tener en cuenta que esta tiene un costo de $20.000COP"
+    },
+    {
+        "Categoria": "MetodosPago",
+        "Mensaje": "Puedes realizar tu pago por medio de nuestros canales disponibles: Transferencia Bancolombia 0123456789, Nequi 3181234567, o mediante PSE ingresando a nuestra p\u00e1gina web www.tuChatBot/pagos"
+    },
+    {
+        "Categoria": "Precio",
+        "Mensaje": "El precio de nuestros productos oscila entre los $40.000COP y $120.000COP.  Si deseas adquirir uno de nuestros servicios escribe \"Asesor\" para ponerte en contacto con uno de nuestros agentes."
+    },
+    {
+        "Categoria": "Servicios",
+        "Mensaje": "Nuestros servicios incluyen telefon\u00eda m\u00f3vil e internet para tu hogar."
+    },
+    {
+        "Categoria": "Soporte",
+        "Mensaje": "Si tu servicio presenta fallas, escr\u00edbenos a nuestra l\u00ednea de whatsapp +57 3187561263 para agendar tu visita. O escribe la palabra \"Asesor\" para ponerte en contacto con uno de nuestros agentes."
+    },
+    {
+        "Categoria": "contacto",
+        "Mensaje": "Puedes comunicarte con la l\u00ednea de atenci\u00f3n de servicio al cliente marcando al 018000 568 5522"
+    },
+    {
+        "Categoria": "horarioAtencion",
+        "Mensaje": "Nuestros horarios de atenci\u00f3n son de lunes a viernes de 8:00am a 6:00pm."
+    },
+    {
+        "Categoria": "noEntiendo",
+        "Mensaje": "Lo siento, no comprendo tu mensaje. \u00bfPodr\u00edas reformular tu pregunta?"
+    },
+    {
+        "Categoria": "tipoConexion",
+        "Mensaje": "Nuestro tipo de conexi\u00f3n es 100% fibra \u00f3ptica."
+    }
+]
